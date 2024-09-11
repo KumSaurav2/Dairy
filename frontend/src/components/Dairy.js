@@ -9,7 +9,7 @@ const DairyDetails = ({dailyDairy}) => {
     const {dispatch} = useContext(DairyContext);
     
     const handleDelete = async () => {
-        const response = await fetch('http://localhost:4000/api/dairy/' + dailyDairy._id, {
+        const response = await fetch('https://dairy-1-miw6.onrender.com/api/dairy/' + dailyDairy._id, {
             method: 'DELETE'
         })
 

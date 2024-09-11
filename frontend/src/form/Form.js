@@ -9,7 +9,7 @@ const Form = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const dairy = {content};
-        const response = await fetch('http://localhost:4000/api/dairy', {
+        const response = await fetch('https://dairy-1-miw6.onrender.com/api/dairy', {
             method: 'POST',
             body: JSON.stringify(dairy),
             headers: {
