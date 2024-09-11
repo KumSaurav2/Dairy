@@ -6,7 +6,7 @@ const dailyDairy = require('./routes/dailyDairy')
 const cors = require('cors')
 
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://dairy-2.onrender.com',
     methods: ['GET', 'POST', 'DELETE']
 }))
 app.use(express.json());
