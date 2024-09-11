@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  background-color: #EBD3F8;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+}
+.App {
+  margin-top: 0px;
+  padding-top: 0px;
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-rows: 60px auto;
+  gap: 10px;
+  position: relative;
+}
+.pop-up {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+}
+.pop-up-inner > button {
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  margin-top: 2px;
+  border: none;
+  background-color: transparent;
+  width: fit-content;
+  cursor: pointer;
+  border-radius: 0px;
+  color: #ffffff;  
+  width: 30px;
+  height: 20px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.pop-up-inner > h3 {
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 10px;
+  color: #ffffff;
+}
+.pop-up-inner {
+  position: relative;
+  background-color: #AD49E1;
+  opacity: 1;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 20px 1fr 10px;
+  row-gap: 10px;
+  height: 440px;
+  width: 60vw;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.form {
+  grid-area: 2 / 1 / 3 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form button {
+  padding: 10px;
+  width: 90%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: rgb(133, 3, 255);
+  cursor: pointer;
+  height: 30px;
+  margin-top: 15px;
+  border-width: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: #ffffff;
+}
+.form button:hover {
+  background-color: #ffffff;
+  border-color:#000000;
+}
+.form button:hover h4 {
+  color: #a601ff;
+}
+.form button h4{
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+}
+.form-input {
+    width: 100%; /* Make the input field take up the full width of its container */
+    height: 350px; /* Adjust the height of the input field */
+    font-size: 16px; /* Adjust the font size */
+    border: 1px solid #ccc; /* Optional: add a border */
+    border-radius: 4px; /* Optional: add rounded corners */
+    
+}
+.buttonDiv {
+  background-color: #AD49E1;
+  grid-area: 1 / 3 / 2 / 4;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.buttonDiv button {
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border-width: 2px;
+  cursor: pointer;
+  color: #000000;
+  text-align: center;
+  transition-duration: 0.35s;
+  width: 60px;
+  box-shadow: 2px 1px 3px rgb(253, 205, 12);
+
+}
+.buttonDiv button:hover{
+  border-color: #ffffff;
+  color: #ffffff;
+  background-color: #AD49E1;
+  border-width: 2px;
+  border-style: solid;
+}
+.container {
+  margin-top: 0px;
+  padding-top: 0px;
+  grid-area: 2 / 2 / 3 / 3;
+  border-radius: 0.5rem;
+} 
+.container > div {
+  margin: 0 auto 0 auto;
+  width: 90%;
+}
+.dairyContent {
+  box-sizing: border-box;
+  margin: 0 5px 0 5px;
+  background-color: #AD49E1;
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid; /* Add this line to define the border style */
+  border-color: #2E073F;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 5px 5px 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  grid-template-rows: auto auto;
+}
+.dairyContent h3:nth-of-type(1) {
+  padding-left: 5px;
+  margin-bottom: 3px;
+}
+.dairyContent h3:nth-of-type(2) {
+  text-align: right;
+  margin-bottom: 3px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+.dairyContent h3:nth-of-type(2):hover {
+  color: #ffffff
+}
+.dairyContent p {
+  background-color: #EBD3F8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border-width: 0.5px;
+  border-style: solid;
+  padding: 2px 5px 2px 5px;
+  
+}
+.lev1 {
+  border-radius: 4px;
+  padding: 5px;
+  border-color: #BB9AB1;
+  border-width: 1px;
+  grid-area: 2 / 1 / 3 / 3;
+  word-wrap: break-word;
+
+}
+
+.navbar {
+  background-color: #AD49E1;
+  margin-top: 0;
+  padding-top: 0;
+  grid-area: 1 / 1 / 2 / -1;
+}
+.navbar h2 {
+  color: #ffffff;
+  text-shadow: 1px 1px 10px rgb(255, 0, 0);
+  margin-top: 0.8rem;
+  margin-left: 3rem;
+}
